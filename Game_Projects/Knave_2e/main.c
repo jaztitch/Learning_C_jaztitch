@@ -18,5 +18,16 @@ int playerInt = 0;
 int playerWis = 0;
 int playerCha = 0;
 
+printf("\"Hello, new friend. What is your name?\"\nYou tell them your name: ");
+fgets(playerName, sizeof(playerName), stdin);
+playerName[strlen(playerName)-1]='\0';
+
+printf("Welcome to the land of Teirthos, %s\n", playerName);
+printf("What brings you to these lands?\nYou state what you\'ve come to Teirthos for: ");
+
+scanf("%s", &playerDesire);
+
+printf("Ah, %s, there is much %s to be found here.\n", playerName, playerDesire);
+
     return 0;
 }
