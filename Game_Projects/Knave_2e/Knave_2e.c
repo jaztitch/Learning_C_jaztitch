@@ -32,8 +32,6 @@ int playerCha = 0;
 
 int i = 0;
 
-char reply[4]= "";
-
 printf("Please enter you gender. Options are: \n");
 for(i = 0; i < 3; i++) {
 	printf("%s ", genders[i]);
